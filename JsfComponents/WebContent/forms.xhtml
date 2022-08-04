@@ -15,7 +15,19 @@
 
 			<h:outputLabel value="Password:" />
 			<h:inputSecret maxlength="7" size="30" />
+
+			<h:outputLabel value="Message:" />
+			<h:inputTextarea cols="30" rows="5" />
 		</h:panelGrid>
+		
+		<h:panelGrid columns="4">
+			<h:commandButton value="Save" />
+			<h:commandButton value="Edit" />
+			<h:commandButton value="Cancel" />
+			<h:commandButton value="Exit" />
+			<h:commandLink value="Come Back" />
+		</h:panelGrid>		
+
 	</h:form>
 </h:body>
 </html>
