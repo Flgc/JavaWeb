@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import br.com.SystemLogin.exception.InvalidUserException;
+
 @WebServlet("/Login")
 public class LoginControllers extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -30,10 +32,9 @@ public class LoginControllers extends HttpServlet {
 		String userName = req.getParameter("txtUser");
 		String userPassword = req.getParameter("txtPassword");
 		
-//		if(userName.trim().equals("") || userPassword.trim().equals("")) {
-//			throw new ServletException("Fill in the fields!");
 		if(!userName.trim().equals("fabio") || !userPassword.trim().equals("123")) {
-			throw new ServletException("Invalid login or password!");
+			throw new InvalidUserException("Invalid login or password!");
+			
 			}
 		
 		 HttpSession session = req.getSession();
