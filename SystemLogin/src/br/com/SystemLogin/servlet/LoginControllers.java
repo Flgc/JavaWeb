@@ -38,7 +38,7 @@ public class LoginControllers extends HttpServlet {
 			}
 		
 		 HttpSession session = req.getSession();
-		 session.setAttribute("usuarioautenticado", userName);		
+		 session.setAttribute("UserAuthentication", userName);		
 				
 	}
 
