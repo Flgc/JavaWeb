@@ -8,13 +8,5 @@ import br.com.SystemLogin.login.Login;
 
 public class Main {
 	public static void main(String[] args) throws SQLException{
-		Connection con = (Connection) ConnectionCreateClass.getConnectionClass();
-		
-		Login newLogin = new Login();
-		newLogin.setLogUser("carla");
-		newLogin.setLogpass("123");
-		
-		DAOLogin dao = new DAOLogin(con);
-		dao.addLogin(newLogin);
 	}
 }

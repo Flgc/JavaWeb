@@ -9,20 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
   <error-page>
-  <exception-type>
+    <exception-type>
   br.com.SystemLogin.exception.InvalidUserException
   </exception-type>
-  <location>
-  /user_error.jsp
-  </location>
+    <location>/user_error.jsp</location>
   </error-page>
-  
   <error-page>
-  	<error-code>500</error-code>
-  	<location>
-  	/user_error.jsp
-  	</location>  
-  </error-page>  
+    <error-code>500</error-code>
+    <location>/user_error.jsp</location>
+  </error-page>
 </web-app>
